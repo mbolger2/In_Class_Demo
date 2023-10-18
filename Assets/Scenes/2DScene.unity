@@ -1190,7 +1190,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ae69f4cc0a804774481c398697d26baf, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -1256,7 +1256,7 @@ Transform:
   m_GameObject: {fileID: 1724163982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3, y: 1.6, z: 0}
-  m_LocalScale: {x: 0.39896, y: 0.39896, z: 0.39896}
+  m_LocalScale: {x: 0.16269588, y: 0.16269588, z: 0.16269588}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1275,8 +1275,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reggiebody: {fileID: 1724163984}
-  jumpForce: 10
-  speed: 0
+  jumpForce: 300
+  speed: 10
+  minFloorDistance: 0
+  raycastOriginOffset: {x: 0, y: 0, z: 0}
+  distanceBetweenRays: 0
+  physicsMovement: 1
+  raw: 0
 --- !u!1 &1808626521
 GameObject:
   m_ObjectHideFlags: 0
