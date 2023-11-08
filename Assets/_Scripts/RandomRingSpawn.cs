@@ -24,7 +24,7 @@ public class RandomRingSpawn : MonoBehaviour
     {
         //The delta time is added to the counter to keep track fo time
         spawnCounter += Time.deltaTime;
-
+        
         //If the counter has surpassed the rate, we're ready to spawn something
         if (spawnCounter > spawnRate)
         {

@@ -41,6 +41,12 @@ public class ScoreRing : MonoBehaviour
         //If the other object has a scoring tag of player
         if (other.CompareTag(scoringTag))
         {
+            if (other.gameObject.TryGetComponent<ShipAnimator>(out ShipAnimator anim))
+            {
+                Debug.Log(other.gameObject.name);
+                anim.Spin();
+            }
+
             //Add 10 points to score manager, which will display
             ScoreManager.Instance.AddScore(10);
 
